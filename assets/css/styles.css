@@ -129,3 +129,103 @@ header ul li a {
   margin: 5px 0;
   transform: scale(0.6);
 }
+@media screen and (max-width: 991px) {
+  .section {
+    padding: 40px;
+    padding-bottom: 140px;
+  }
+  header {
+    padding: 20px 40px;
+  }
+  header .logo {
+    position: relative;
+    max-width: 80px;
+  }
+  header ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  header ul.active {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  header ul li a {
+    display: inline-block;
+    color: #111;
+    font-weight: 400;
+    margin-right: 0;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  header ul li a:hover {
+    color: #ed0223;
+  }
+  .toggle_menu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(/assets/imges/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    cursor: pointer;
+    filter: invert(1);
+  }
+  .toggle_menu.active {
+    background: url(/assets/imges/exit.png);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    filter: invert(0);
+  }
+  .content {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  .content .text_box {
+    position: relative;
+    max-width: 100%;
+    padding-left: 20px;
+  }
+  .content .text_box p {
+    font-size: 0.9em;
+  }
+  .content .text_box h2 {
+    color: #fff;
+    font-size: 1.5em;
+  }
+  .content .text_box a {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .content .image_box {
+    width: 100%;
+    display: flex;
+    padding-left: 0;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .content .image_box img {
+    max-width: 150px;
+  }
+  .thumbnails li img {
+    max-width: 30px;
+  }
+  .social_media {
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 0;
+    width: 50px;
+  }
+}
